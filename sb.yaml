@@ -1,0 +1,16 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ServiceBinding
+metadata:
+  name: binding-request
+  namespace: statefarm-operators
+spec:
+  application:
+    name: myapp
+    group: apps
+    version: v1
+    resource: deployments
+  services:
+  - group: sf.statefarm.com
+    version: v1alpha1
+    kind: ExternalResource
+    name: db-demo

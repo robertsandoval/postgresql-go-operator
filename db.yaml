@@ -1,0 +1,9 @@
+apiVersion: sf.statefarm.com/v1alpha1
+kind: ExternalResource
+metadata:
+  name: db-demo
+  namespace: statefarm-operators
+spec:
+  connection: myconnectionstring
+  username: postgres
+  password: postgres-pw 

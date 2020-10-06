@@ -1,0 +1,7 @@
+apiVersion: sf.statefarm.com/v1alpha1
+kind: ExternalResource
+metadata:
+  name: externalresource-sample
+spec:
+  # Add fields here
+  foo: bar
